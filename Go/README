@@ -1,0 +1,8 @@
+The interactive functionalities are defined in /cmd/wasm/main.go
+Navigate to the directory and use command 
+GOOS=js GOARCH=wasm go build -o  ../../assets/main.wasm 
+to compile the go code into webassembly file main.wasm
+
+To load the webpage, a server is needed. Navigate to /cmd/server/ and use command 
+go run main.go
+to start the server. Afterward, visit the webpage via localhost:9090/
